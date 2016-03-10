@@ -9,8 +9,11 @@ function getValues(){
 	if (user === 'B' || user === 'b'){
 		console.log("Hi Bob");
 		user = 'Bob'
-	} else { 
-		console.log("WTF");
+	} else if (user === 'MIM'){
+		console.log("Hi Darth....!");
+		user = 'Darth'; 
+	} else {
+		console.log("no user found");
 	}
 	var base = readlineSync.question("Write common base(alpha) for " + user + ":");
 	var q = readlineSync.question("Write common q value for " +user + ":");
